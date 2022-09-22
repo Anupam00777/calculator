@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrap" id="wrap">
+        <div class="calc" id="calc">
+          <p id="naam">
+            <u
+              ><b><i>Made by Anupam pandey</i></b></u
+            >
+          </p>
+          <div class="screen" id="screen">
+            <input placeholder="Enter" class="results" id="results" />
+          </div>
+          <p id="warn">
+            <u><i>Please only Enter Numbers.</i></u>
+          </p>
+          <div class="buttons" id="btn">
+            <button id="dark" onclick="dark()" class="but">Dark Mode</button>
+            <button id="percentage" onclick="per()" class="but">%</button>
+            <button id="clear" onclick="clean()" class="but">C</button>
+            <button id="back" onclick="backs()" class="but">⇐</button>
+            <button id="sqrt" onclick="sqrt()" class="but">√</button>
+            <button id="powers" onclick="powers()" class="but">Power</button>
+            <button id="paran" onclick="paran()" class="but">()</button>
+            <button id="divide" onclick="div()" class="but">/</button>
+            <button id="seven" onclick="seven()" class="but">7</button>
+            <button id="eight" onclick="eight()" class="but">8</button>
+            <button id="nine" onclick="nine()" class="but">9</button>
+            <button id="multiply" onclick="mul()" class="but">*</button>
+            <button id="four" onclick="four()" class="but">4</button>
+            <button id="five" onclick="five()" class="but">5</button>
+            <button id="six" onclick="six()" class="but">6</button>
+            <button id="minus" onclick="min()" class="but">-</button>
+            <button id="one" onclick="one()" class="but">1</button>
+            <button id="two" onclick="two()" class="but">2</button>
+            <button id="three" onclick="three()" class="but">3</button>
+            <button id="plus" onclick="pluss()" class="but">+</button>
+            <button id="history" onclick="startlog()" class="but">Calc.</button>
+            <button id="zero" onclick="zero()" class="but">0</button>
+            <button id="decimal" onclick="dec()" class="but">.</button>
+            <button id="equal" onclick="equals()" class="but">=</button>
+          </div>
+        </div>
+      </div>
+      <div class="kiss" id="kiss">
+        <div class="history" id="his">
+          <h3 id="head"><u>Calculations</u></h3>
+          <hr class="line" />
+          <ol id="list"></ol>
+          <hr class="line" />
+          <button id="jojo" onclick="reset()">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
